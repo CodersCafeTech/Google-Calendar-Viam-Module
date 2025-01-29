@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "coderscafe:google-calendar",
+  "visibility": "public",
+  "url": "https://github.com/CodersCafeTech/Google-Calendar-Viam-Module",
+  "description": "A Viam Service To Interact With Google Calendar",
+  "models": [
+    {
+      "api": "rdk:service:generic",
+      "model": "coderscafe:calendar:google-calendar"
+    }
+  ],
+  "entrypoint": "run.sh"
+}
