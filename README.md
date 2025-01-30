@@ -1,14 +1,11 @@
 # google-calendar modular service
 
-This module implements the [rdk generic API](https://github.com/rdk/generic-api) in a coderscafe:calendar:google-calendar model.
-With this model, you can...
+This module implements the [rdk generic API](https://github.com/rdk/generic-api) in a [**coderscafe:calendar:google-calendar**](https://app.viam.com/module/coderscafe/google-calendar) model.
+With this module, you can read and write events on your Google Calendar.
 
 ## Requirements
 
-_Add instructions here for any requirements._
-
-``` bash
-```
+Ensure you have generated a service account file from the Google Cloud Console, if not follow the steps from [here](https://codelabs.viam.com/guide/pomodoro-bot/index.html?index=..%2F..index#3).
 
 ## Build and Run
 
@@ -19,16 +16,18 @@ To use this module, follow these instructions to [add a module from the Viam Reg
 > [!NOTE]  
 > Before configuring your generic, you must [create a machine](https://docs.viam.com/manage/fleet/machines/#add-a-new-machine).
 
-Navigate to the **Config** tab of your robot’s page in [the Viam app](https://app.viam.com/).
-Click on the **Components** subtab and click **Create component**.
-Select the `generic` type, then select the `coderscafe:calendar:google-calendar` model. 
-Enter a name for your generic and click **Create**.
+* Navigate to the **Config** tab of your robot’s page in [the Viam app](https://app.viam.com/).
+* Click on the **Services** subtab and search for `coderscafe:calendar:google-calendar`.
+* Select the `coderscafe:calendar:google-calendar` model. 
+* Enter a name for your generic service and click **Create**.
+* Save and wait for the service to finish setup.
 
-On the new component panel, copy and paste the following attribute template into your generic’s **Attributes** box:
+On the new service panel, copy and paste the following attribute template into your generic’s **Attributes** box:
 
 ```json
 {
-  TODO: INSERT SAMPLE ATTRIBUTES
+  "calendar_id": calendar-id,
+  "service_account_file": path-of-service-account-json-file
 }
 ```
 
@@ -41,25 +40,14 @@ The following attributes are available for `rdk:generic:coderscafe:calendar:goog
 
 | Name | Type | Inclusion | Description |
 | ---- | ---- | --------- | ----------- |
-| `todo1` | string | **Required** |  TODO |
-| `todo2` | string | Optional |  TODO |
+| `calendar_id` | string | **Required** |  ID of your Calendar |
+| `service_account_file` | string | **Required** |  Path to your Service Account JSON file |
 
 ### Example Configuration
 
 ```json
 {
-  TODO: INSERT SAMPLE CONFIGURATION(S)
+  "calendar_id": calendar-id,
+  "service_account_file": path-of-service-account-json-file
 }
 ```
-
-### Next Steps
-
-_Add any additional information you want readers to know and direct them towards what to do next with this module._
-_For example:_ 
-
-- To test your...
-- To write code against your...
-
-## Troubleshooting
-
-_Add troubleshooting notes here._
