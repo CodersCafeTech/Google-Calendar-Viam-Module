@@ -36,7 +36,7 @@ On the new service panel, copy and paste the following attribute template into y
 
 ### Attributes
 
-The following attributes are available for `rdk:generic:coderscafe:calendar:google-calendar` generics:
+The following attributes are available for `coderscafe:calendar:google-calendar` module:
 
 | Name | Type | Inclusion | Description |
 | ---- | ---- | --------- | ----------- |
