@@ -9,7 +9,7 @@ Ensure you have generated a service account file from the Google Cloud Console, 
 
 ## Build and Run
 
-To use this module, follow these instructions to [add a module from the Viam Registry](https://docs.viam.com/registry/configure/#add-a-modular-resource-from-the-viam-registry) and select the `rdk:generic:coderscafe:calendar:google-calendar` model from the [`coderscafe:calendar:google-calendar` module](https://app.viam.com/module/rdk/coderscafe:calendar:google-calendar).
+To use this module, follow these instructions to [add a module from the Viam Registry](https://docs.viam.com/registry/configure/#add-a-modular-resource-from-the-viam-registry) and select the [`coderscafe:calendar:google-calendar` module](https://app.viam.com/module/coderscafe/google-calendar).
 
 ## Configure your generic
 
